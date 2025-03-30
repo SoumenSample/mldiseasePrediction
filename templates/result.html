@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Prediction Result</h2>
+    <div class="result-container">
+        <p><strong>Leaf Name:</strong> {{ leaf_name }}</p>
+        <p><strong>Status:</strong> {{ status }}</p>
+        <p><strong>Confidence:</strong> {{ confidence }}%</p>
+        <a href="/">Upload Another Image</a>
+    </div>
+</body>
+</html>
