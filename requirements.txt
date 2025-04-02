@@ -1,5 +1,6 @@
 flask
 tensorflow
+tensorflow-gpu == 2.10
 numpy
 pillow
 gunicorn  # Required for deployment
