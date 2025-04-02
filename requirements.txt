@@ -1,6 +1,6 @@
 flask
 tensorflow
-
+tensorflow_gpu == 2.10.0
 numpy
 pillow
 gunicorn  
