@@ -42,7 +42,9 @@ def preprocess_image(base64_string):
     except Exception as e:
         logger.error(f"Error processing image: {e}")
         return None
-
+@app.get("/")
+def home():
+    return {"message": "Crop Recommendation API is running!"}
 @app.route("/predict", methods=["POST"])
 def predict():
     if model is None or class_names is None:
